@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>— Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/mgGlitch/src/mgGlitch.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- ULTRA CINEMATIC BOOT -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <div id="bootScreen">
+      <div class="boot-content">
+        <div class="boot-title glitch" data-text="">INITIALIZING SYSTEM</div>
+
+        <div id="bootLogs"></div>
+
+        <div class="ip-track" id="ipTrack"></div>
+
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </div>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="noise"></div>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="nav-logo">☢️</a>
+      <ul class="nav-links">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <span class="hero-tag">// FULL STACK DEVELOPER</span>
+      <div class="hero-name-wrapper">
+        <h1 class="hero-name">
+          <span class="glitch" data-text="">JUBAYED</span>
+          <span class="solid glitch" data-text="REZA">REZA</span>
+        </h1>
+
+        <div class="container">
+          <img src="profile.jpg" class="name-img glitch-img" />
+        </div>
+      </div>
+      <p class="hero-title">
+        BUILDING <span class="accent">DIGITAL FUTURES</span> — ONE LINE AT A
+        TIME
+      </p>
+      <p class="hero-desc">
+        I craft high-performance web applications and immersive digital
+        experiences. Obsessed with clean code, bold design, and pushing
+        boundaries.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">VIEW WORK</a>
+        <a href="#contact" class="btn-secondary">CONTACT</a>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-frame">
+          <div class="orbit-ring">
+            <div class="orbit-dot"></div>
+          </div>
+          <div class="orbit-ring">
+            <div class="orbit-dot orbit-dot-2"></div>
+          </div>
+          <div class="avatar-hex">
+            <span class="avatar-initials">JR</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-text reveal">
+        <div class="section-header">
+          <p class="section-tag">// 01 — ABOUT</p>
+          <h2 class="section-title">WHO AM I</h2>
+          <div class="section-line"></div>
+        </div>
+        <p>
+          A full-stack engineer with 6+ years of experience building scalable
+          systems and interfaces that don't just work — they feel alive. I
+          thrive at the intersection of engineering rigor and creative vision.
+        </p>
+        <p>
+          When I'm not writing code, I'm exploring generative art,
+          reverse-engineering algorithms, or tinkering with embedded systems. I
+          believe software is a medium for storytelling.
+        </p>
+      </div>
+
+      <div class="about-stats reveal" style="transition-delay: 0.2s">
+        <div class="stat-card">
+          <span class="stat-number">6+</span>
+          <span class="stat-label">YEARS EXP</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">40+</span>
+          <span class="stat-label">PROJECTS</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">12</span>
+          <span class="stat-label">CLIENTS</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">99%</span>
+          <span class="stat-label">UPTIME SLA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-header reveal">
+        <p class="section-tag">// 02 — SKILLS</p>
+        <h2 class="section-title">TECH STACK</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal" style="transition-delay: 0.05s">
+          <span class="skill-icon">⚡</span>
+          <div class="skill-name">FRONTEND</div>
+          <p class="skill-desc">
+            React, Vue, Next.js — pixel-perfect, motion-rich interfaces.
+          </p>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 92%"></div>
+          </div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay: 0.1s">
+          <span class="skill-icon">🔧</span>
+          <div class="skill-name">BACKEND</div>
+          <p class="skill-desc">
+            Node.js, Go, Python — APIs built for scale and speed.
+          </p>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 87%"></div>
+          </div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay: 0.15s">
+          <span class="skill-icon">🗄️</span>
+          <div class="skill-name">DATABASES</div>
+          <p class="skill-desc">
+            PostgreSQL, MongoDB, Redis — data that moves at light speed.
+          </p>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay: 0.2s">
+          <span class="skill-icon">☁️</span>
+          <div class="skill-name">DEVOPS</div>
+          <p class="skill-desc">
+            AWS, Docker, Kubernetes — deploying with zero downtime.
+          </p>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay: 0.25s">
+          <span class="skill-icon">🤖</span>
+          <div class="skill-name">AI / ML</div>
+          <p class="skill-desc">
+            LLM integrations, vector search, generative pipelines.
+          </p>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay: 0.3s">
+          <span class="skill-icon">🎨</span>
+          <div class="skill-name">DESIGN</div>
+          <p class="skill-desc">
+            Figma, motion design, creative direction, 3D with Three.js.
+          </p>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 82%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-header reveal">
+        <p class="section-tag">// 03 — PROJECTS</p>
+        <h2 class="section-title">SELECTED WORK</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal" style="transition-delay: 0.05s">
+          <div class="project-thumb project-thumb-1">
+            <div class="project-thumb-gfx"></div>
+            <div class="project-scan"></div>
+            <span class="project-thumb-label">NEO</span>
+          </div>
+          <div class="project-body">
+            <p class="project-number">// PROJECT 01</p>
+            <h3 class="project-title">NEOBANK PLATFORM</h3>
+            <p class="project-desc">
+              A next-gen digital banking interface with real-time transaction
+              feeds, AI spending insights, and biometric auth.
+            </p>
+            <div class="project-tags">
+              <span class="tag">NEXT.JS</span>
+              <span class="tag">NODE</span>
+              <span class="tag">POSTGRES</span>
+              <span class="tag">STRIPE</span>
+            </div>
+            <a href="#" class="project-link">VIEW PROJECT</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.1s">
+          <div class="project-thumb project-thumb-2">
+            <div class="project-thumb-gfx"></div>
+            <div class="project-scan"></div>
+            <span class="project-thumb-label">SYN</span>
+          </div>
+          <div class="project-body">
+            <p class="project-number">// PROJECT 02</p>
+            <h3 class="project-title">SYNAPSE AI AGENT</h3>
+            <p class="project-desc">
+              An autonomous AI research assistant that browses, reads,
+              synthesizes, and delivers structured intelligence reports.
+            </p>
+            <div class="project-tags">
+              <span class="tag">PYTHON</span>
+              <span class="tag">LANGCHAIN</span>
+              <span class="tag">VECTOR DB</span>
+              <span class="tag">REDIS</span>
+            </div>
+            <a href="#" class="project-link">VIEW PROJECT</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.15s">
+          <div class="project-thumb project-thumb-3">
+            <div class="project-thumb-gfx"></div>
+            <div class="project-scan"></div>
+            <span class="project-thumb-label">GRD</span>
+          </div>
+          <div class="project-body">
+            <p class="project-number">// PROJECT 03</p>
+            <h3 class="project-title">GRIDWORLD ENGINE</h3>
+            <p class="project-desc">
+              A real-time multiplayer strategy game engine with WebSockets,
+              custom physics, and procedural map generation.
+            </p>
+            <div class="project-tags">
+              <span class="tag">GO</span>
+              <span class="tag">WEBSOCKET</span>
+              <span class="tag">REACT</span>
+              <span class="tag">CANVAS</span>
+            </div>
+            <a href="#" class="project-link">VIEW PROJECT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-info reveal">
+        <div class="section-header">
+          <p class="section-tag">// 04 — CONTACT</p>
+          <h2 class="section-title">LET'S BUILD</h2>
+          <div class="section-line"></div>
+        </div>
+        <p>
+          Have a project in mind or want to collaborate? I'm currently open to
+          freelance work and full-time opportunities.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:JR@mercer.dev" class="contact-link">
+            <span>📡</span>
+            <span>JR@MERCER.DEV</span>
+          </a>
+          <a href="#" class="contact-link">
+            <span>🌐</span>
+            <span>GITHUB /JUBAYED</span>
+          </a>
+          <a href="#" class="contact-link">
+            <span>💼</span>
+            <span>LINKEDIN /JUBAYED</span>
+          </a>
+          <a href="#" class="contact-link">
+            <span>🐦</span>
+            <span>TWITTER @JUBAYED</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal" style="transition-delay: 0.2s">
+        <div class="form-group">
+          <label>// NAME</label>
+          <input type="text" placeholder="YOUR_NAME" />
+        </div>
+        <div class="form-group">
+          <label>// EMAIL</label>
+          <input type="email" placeholder="YOUR@EMAIL.COM" />
+        </div>
+        <div class="form-group">
+          <label>// MESSAGE</label>
+          <textarea placeholder="DESCRIBE YOUR PROJECT..."></textarea>
+        </div>
+        <a
+          href="#"
+          class="btn-primary"
+          style="text-align: center; display: block; width: 100%"
+          >TRANSMIT MESSAGE</a
+        >
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>© 2026 JUBAYED REZA // ALL RIGHTS RESERVED</span>
+      <div class="footer-status">
+        <div class="status-dot"></div>
+        <span>SYSTEM ONLINE</span>
+      </div>
+      <span>BUILT WITH HTML + CSS</span>
+    </footer>
+  </body>
+</html>

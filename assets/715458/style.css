@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #020617;
+  overflow-x: hidden;
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: #00d9ff33;
+  border-radius: 50%;
+  top: -200px;
+  left: -200px;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: #7b2cff33;
+  border-radius: 50%;
+  bottom: -200px;
+  right: -200px;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav h1 {
+  font-size: 30px;
+  color: #00d9ff;
+  text-shadow: 0 0 20px #00d9ff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #00d9ff;
+  text-shadow: 0 0 10px #00d9ff;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h2 {
+  font-size: 65px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #00d9ff, #7b2cff, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 10px #00d9ff);
+  }
+
+  to {
+    filter: drop-shadow(0 0 25px #7b2cff);
+  }
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #00d9ff, #7b2cff);
+  color: white;
+  box-shadow: 0 0 20px #00d9ff88;
+}
+
+.btn-primary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px #00d9ff;
+}
+
+.btn-secondary {
+  border: 2px solid #00d9ff;
+  color: #00d9ff;
+}
+
+.btn-secondary:hover {
+  background: #00d9ff;
+  color: black;
+  box-shadow: 0 0 25px #00d9ff;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.hero-image img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #00d9ff;
+  box-shadow:
+    0 0 25px #00d9ff,
+    0 0 60px #7b2cff;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+section {
+  padding: 100px 10%;
+}
+
+.title {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 50px;
+  color: #00d9ff;
+  text-shadow: 0 0 20px #00d9ff;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 30px;
+  border-radius: 25px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px #00d9ff66;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #00d9ff;
+}
+
+.card p,
+.card li {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .hero-text h2 {
+    font-size: 45px;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
