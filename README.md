@@ -2,9 +2,9 @@
 
 This is a group project that brings together 11 student portfolios into one unified website, allowing visitors to explore all members work in a single place.
 
-<!-- ## Our course instructor:
+## Our course instructor:
 
-> Mst. Jinat Sultana -->
+> Mst. Jinat Sultana
 
 ## 👥 Group Members
 
@@ -16,7 +16,7 @@ This is a group project that brings together 11 student portfolios into one unif
 
 > Mst. Tanvin Tisha
 
-> Rupkotha PK
+> Rupkotha PK Srabonti
 
 > Mst. Tasfia Alom
 
@@ -24,9 +24,9 @@ This is a group project that brings together 11 student portfolios into one unif
 
 > Sadia Alim
 
-> Rakibul Hasan
+> Md. Rakibul Hasan
 
-> Dipu Chondra Saha (Sub leader)
+> Dipu Chandra Sarker (Sub leader)
 
 > Ifad Hossain Suddho
 
