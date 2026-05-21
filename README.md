@@ -1,25 +1,39 @@
-# college_ProjectWork_group_3
+# College project
 
-> Our group members:
+This is a group project that brings together 11 student portfolios into one unified website, allowing visitors to explore all members work in a single place.
 
-> > Jubayed Reza
+<!-- ## Our course instructor:
 
-> > Mst. Sidratul Montaha
+> Mst. Jinat Sultana -->
 
-> > Mst. Tanvin Tisha
+## 👥 Group Members
 
-> > Mst. Tasfia Alom
+> Jubayed Reza Dibbo (Group leader)
 
-> > Mst. Nazmin Ara Nipa
+> Mst. Risat Tasnim
 
-> > Mst. Risat Tasnim
+> Mst. Nazmin Ara Nipa
 
-> > Rupkotha PK
+> Mst. Tanvin Tisha
 
-> > Sadia Alim
+> Rupkotha PK
 
-> > Dipu Chondra Saha
+> Mst. Tasfia Alom
 
-> > Ifad
+> Mst. Sidratul Montaha
 
-> > Rakibul Islam
+> Sadia Alim
+
+> Rakibul Hasan
+
+> Dipu Chondra Saha (Sub leader)
+
+> Ifad Hossain Suddho
+
+<br>
+
+## Other projects from this group:
+
+### 🔗 [Calculator](https://github.com/Jubayed-02/Calculator)
+
+### 🔗 [Library Management System](https://github.com/Jubayed-02/library-management-system)
